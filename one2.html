@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>assignment-2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <style>
+            #mainframe{
+                background-color: white;
+            }
+            body{
+                background-color:rgb(136, 64, 172);
+            }
+            #intro{
+                font-size: x-small;
+                color: aliceblue;
+            }
+            nav {
+                top: 5px;
+                right: 0px;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                text-align: right;
+                margin-right:80px ;
+                
+                
+                }
+            nav li {
+                list-style-type: none;
+
+               
+               }
+            nav a {
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px;
+                font-size: 12px;
+                
+                }
+            #me button{
+                background-color: whitesmoke;
+                border: none;
+                height: 30px;
+                border-radius: 15px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                }
+           #love img{
+            height: 200px;
+
+            }
+            #you img{
+                height: 600px;
+                position: absolute;
+                right: 0px;
+                top: 100px;
+            }
+            #myself {
+        position: absolute;
+        top: 200px; 
+        left: 40%; 
+        transform: translateX(-50%); 
+        text-align:left;
+            }
+
+            #myself p {
+                color: white; 
+                font-size: 60px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            #searchbox {
+                position: absolute;
+                
+                
+                transform: translateX(-50%);
+                display: flex;
+                align-items: center;
+            }
+
+            #searchbox input {
+                position: absolute;
+                top: 150px;
+                left: 200px;
+                width: 210px;
+                height: 30px;
+                border-radius: 15px;
+                border: none;
+                padding: 10px;
+            }
+
+            #searchbox button {
+                position: absolute;
+                top: 150px;
+                left: 200px;
+                width: 30px;
+                height: 30px;
+                border: none;
+                background-color: transparent;
+                margin-left: 5px; /* Add margin to separate the button from the input */
+            }
+            #quote{
+                position: absolute;
+                top: 800px;
+                left:100px;
+                text-decoration: wavy;
+                text-align: justify;
+                text-align: left;
+                padding: 100px;
+                font-size:medium;
+                margin-left: 10px;
+                color: white;
+                height: 300px;
+                width: 800px;
+                background-color:rgb(82, 25, 108);
+            }
+             #quote #mallesh{
+                color: red;
+
+             }
+             #call img{
+                position:absolute;
+                height: 300px;
+                
+                top: 1200px;
+
+             }
+             #call #sell{
+                position: absolute;
+                top: 1300px;
+                left: 400px;
+                color: white;
+                font-weight: bold;
+                font-display: underline;
+             }
+             #call #justifi{
+                
+                position: absolute;
+                top: 1390px;
+                left: 400px;
+                color: white;
+            
+
+             }
+             #middle #content1{
+                position: absolute;
+                top: 1500px;
+                background-color: orange;
+                left: 400px;
+                width: 160px;
+                height: 150px;
+                text-align: bottom;
+             }
+             #middle #content1 #number{
+                color: rgba(255, 248, 220, 0.677);
+             }
+             #middle #content2 #number{
+                color: rgba(255, 248, 220, 0.677);
+             }
+             #middle #content3 #number{
+                color: rgba(255, 248, 220, 0.677);
+             }
+             #middle #content1 #list{
+                color: rgb(255, 248, 220);
+                text-align: center;
+             }
+            
+             #middle #content2 #list{
+                color: rgb(255, 248, 220);
+                text-align: center;
+             }
+
+             #middle #content3 #list{
+                color: rgb(255, 248, 220);
+                text-align: center;
+             }
+             #middle #content2{
+                position: absolute;
+                top: 1500px;
+                background-color: orange;
+                left: 600px;
+                width: 160px;
+                height: 150px;
+                text-align: bottom;
+             }
+             #middle #content3{
+                position: absolute;
+                top: 1500px;
+                background-color: orange;
+                left: 800px;
+                width: 160px;
+                height: 150px;
+                text-align: bottom;
+             }
+             #fool{
+                background-color: white;
+
+             }
+             #down{ 
+                background-color: white;
+                position: absolute;
+                top: 1600px;
+                background-size: cover;
+                height: 1600px;
+                width: 1010px;
+
+             }
+             
+             
+             #op{
+                position: absolute;
+                left: 50px;
+                top: 300px;
+                font-weight: bold;
+
+             }
+             #down img{
+                position: absolute;
+                top: 200px;
+                right: 20px;
+                height: 300px;
+             }
+             #pl{
+                position: absolute;
+                left: 50px;
+                top: 350px;
+                font-weight: bold;
+             }
+             #ul{
+                position: absolute;
+                right: 90px;
+                top: 700px;
+                font-weight: bold;
+             }
+             #ql{
+                position: absolute;
+                right: 90px;
+                top: 750px;
+                font-weight: bold;
+             }
+             #love2 img{
+                position: absolute;
+                top: 500px;
+                left: 20px;
+                height: 300px;
+             }
+             #love3{
+                position: absolute;
+                top: 1000px;
+                left: 50px;
+                
+             }
+            #fool{
+                top: 1500px;
+                left: 0px;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                text-align: right;
+                margin-right:80px ;
+                display: inline-block;
+                font-size: x-small;
+                background-color: rgb(91, 40, 136);
+            }
+            
+
+
+
+
+           
+        </style>
+
+    </head>
+    <body>
+        <div class="mainframe">
+        
+        <header id="branding">
+            <div id="intro">
+            <h1>Veera Siva Abhishek</h1>
+           
+            <nav>
+                <li><a href="./auth/services.html">Services</a></li>
+                <li><a href="./auth/about us.html">About Us</a></li>
+                <li><a href="./auth/contact.html">contact</a></li>
+            </nav>
+             </div>
+                           
+            
+            <div id="me">
+                <button type="button">Sign up</button>
+            </div>
+            <div id="love"><img src="https://tse4.mm.bing.net/th?id=OIP.YY-MkL78tuJbGternOAMXAHaJQ&pid=Api&P=0&h=180" alt=""></div>
+            
+
+        </header>
+        <main>
+            <div id="you">
+                <img src="https://i.pinimg.com/originals/92/e7/e1/92e7e1e07d0c9c511cdced724935d7e3.jpg" alt="">
+            </div>
+            <div id="myself">
+                <p>An Interior <br>Company of India</p>
+            </div>
+            <div id="searchbox">
+                    <form method="get" action="search.html"></form>
+                        <input type="search" name="search-key" placeholder="Search here......"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </div>
+            <div id="quote">
+                <p>
+                    An agency refers to a relationship comprising two parties, <br>where one party,called the agent, represents the other party, <br>called the principal. An agent is usually hired by the principal <br>to perfom an act on his behalf.
+                </p>
+                <p>by founder</p>
+                <p id="mallesh">Mallesh_nethi</p>
+                
+            </div>
+            <div id="call">
+                <img src="https://i.pinimg.com/originals/2e/ed/27/2eed27f23fc6529502e8797942cb56c0.jpg" alt="">
+                <h3 id="sell">Making World-class Designs <br>is our main motto  </h3>
+                <p id="justifi">satisfying the coustmers criteria is our main motto. Whatever is your reqirement we can fullfill it </p>
+            </div>
+        </main>
+    
+    
+    <div >
+    <div id="down">
+        <h3 id="op">Site visit with the client</h3>
+        <h6 id="pl">Knowing there requirement  </h6>
+        <span style='font-size:30px; position: absolute; top:350px ; left: 300px;'><p> &#8594; </p></span>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.MVUuirTZKyC-7_Rst0TTKAHaFE&pid=Api&P=0&h=180" alt="">
+        <div id="love2">
+            <h3 id="ul">Planing the Design</h3>
+            <h6 id="ql">Based on the reqirement  </h6>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.EaQ2e6Jng41s1bGMimOMmwHaE8&pid=Api&P=0&h=180" alt="">
+        </div>
+        <div id="love3">
+            <h1>All you need to do is <br>follow our steps </h1>
+            <h5>STEP-1</h5>
+            <p>Register into our page and book a slot</p>
+            <h5>STEP-2</h5>
+            <p>give your address details to our member to konw your place </p>
+        </div>
+        <footer id="fool" style="background-color: bisque;">
+            
+            <h3 style="position: absolute;left: 30px;font-size: medium;><a href=""></a>Product</h3>
+            
+            <h3 style="position: absolute;left: 160px;font-size:medium;"><a href=""></a>Resources</h3>
+            <h3 style="position: absolute;left: 360px;font-size: medium;"><a href=""></a>Community</h3>
+            <h3 style="position: absolute;left: 650px;font-size: medium;"><a href=""></a>Support</h3>
+            <h3 style="position: absolute;left: 800px;font-size: medium;"><a href=""></a>Company</h3>
+           
+            
+        </footer>
+    </div>
+</div>
+</div>
+<section id="middle">
+    <div id="content1">
+        <p id="number">01</p>
+        <h3 id="list">Site visit</h3>
+    </div>
+    <div id="content2">
+        <p id="number">02</p>
+        <h3 id="list">Planing</h3>
+    </div>
+    <div id="content3">
+        <p id="number">03</p>
+        <h3 id="list">Execution</h3>
+    </div>
+
+</section>
+</body>
+
+   
+   
+</html>
